@@ -16,6 +16,8 @@ def selectoption():
 def options():
     top5 = hltv.top5teams()
     top30 = hltv.top30teams()
+    topplayers = hltv.top_players()
+    results = hltv.get_results()
     is_valid = 0
     while not is_valid:
         try:
@@ -29,7 +31,12 @@ def options():
 
     elif option == 2:
         pp.pprint(top30[0:])
-        return options
+    
+    elif option == 3:
+        pp.pprint(topplayers)
+
+    elif option == 4:
+        pp.pprint(results)
 
 selectoption()
 options()
