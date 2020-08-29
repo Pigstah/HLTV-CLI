@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 import main as hltv
 import json
 import pprint
